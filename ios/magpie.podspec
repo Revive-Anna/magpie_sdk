@@ -133,19 +133,19 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "MagpieBridge", :path => './source'
 
-  spec.subspec 'MagpieBridge' do |magpieBridge|
-    magpieBridge.source_files        = 'source/**/*.{h,m,mm}'
-    magpieBridge.dependency 'Flutter'
-    magpieBridge.requires_arc       = true
-    magpieBridge.xcconfig = {
-      'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-      'CLANG_CXX_LIBRARY' => 'libc++',
-      'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**',
-      'OTHER_LDFLAGS' => '$(inherited)'
-    }
-  end
+  # spec.subspec 'MagpieBridge' do |magpieBridge|
+  #   magpieBridge.source_files        = 'source/**/*.{h,m,mm}'
+  #   magpieBridge.dependency 'Flutter'
+  #   magpieBridge.requires_arc       = true
+  #   magpieBridge.xcconfig = {
+  #     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+  #     'CLANG_CXX_LIBRARY' => 'libc++',
+  #     'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**',
+  #     'OTHER_LDFLAGS' => '$(inherited)'
+  #   }
+  # end
 
   # spec.subspec 'flutter' do |flutter|
   # 	fdebug = 'flutter/debug/Flutter.framework'
