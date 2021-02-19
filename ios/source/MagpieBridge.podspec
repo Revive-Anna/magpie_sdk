@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://flutter.io'
   s.license          = { :type => 'MIT' }
   s.author           = { 'sac' => 'zdl51go@gmail.com' }
-  s.source           = { :git => 'https:', :tag => s.version.to_s }
+  s.source           = { :http => 'https://github.com/Revive-Anna/magpie_sdk/blob/dev_0.0.1_wanbing/ios/source.zip' }
 
   s.source_files = '**/*.{h,m,mm}'
   s.ios.deployment_target = '8.0'
